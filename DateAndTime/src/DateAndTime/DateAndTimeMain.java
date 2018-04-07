@@ -38,7 +38,7 @@ public class DateAndTimeMain {
         //criando Dateandtime atravez do construtor parametrizado.
         dt[1] = new DateAndTime(month, day+1, year, 0, 0, 0);
         //primeiro print para testar o metodo toString.
-        System.out.printf("Data: %s e hora: %s" , dt[0].toStringDate(),
+        System.out.printf("Data: %s e hora: %s\n" , dt[0].toStringDate(),
                 dt[0].toStringTime());
         /*um teste parecido com um calendario que corre de uma data a outra*/
         while (dt[0].getDay() != dt[1].getDay() 
@@ -48,7 +48,7 @@ public class DateAndTimeMain {
                 || dt[0].getMinute() != dt[1].getMinute()
                 || dt[0].getSecond() != dt[1].getSecond()){
             dt[0].tick();
-            System.out.printf("Data: %s e hora: %s" , dt[0].toStringDate(), 
+            System.out.printf("Data: %s e hora: %s\n" , dt[0].toStringDate(), 
                     dt[0].toStringTime());
         }
     }
