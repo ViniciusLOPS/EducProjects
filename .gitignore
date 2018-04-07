@@ -1,0 +1,4 @@
+
+*.exe
+/DateAndTime/nbproject/private/
+/DateAndTime/build/
